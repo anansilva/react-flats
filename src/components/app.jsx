@@ -5,10 +5,10 @@ import FlatList from './flat-list';
 const App = () => {
   return (
     <div>
+      <div className="map-container" />
       <div className="flat-list">
         <FlatList flats={flats} />
       </div>
-      <div className="map-container" />
     </div>
   );
 };
