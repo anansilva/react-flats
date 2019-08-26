@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class Flat extends Component {
-  handleClick = (e) => {
+  handleClick = () => {
     this.props.selectFlat(this.props.index);
   };
 
@@ -21,6 +21,6 @@ class Flat extends Component {
       </div>
     );
   }
-};
+}
 
 export default Flat;
