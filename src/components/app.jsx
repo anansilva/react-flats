@@ -7,22 +7,30 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      center: {
-        lat: 38.722252,
-        lng: -9.139337
-      },
-      zoom: 11
+      selectedFlat: flats[0],
+      flats
     };
   }
 
+  selectFlat = (index) => {
+    this.setState({ selectedFlat: flats[index] });
+  }
+
+  center() {
+    return {
+      lat: this.state.selectedFlat.lat,
+      lng: this.state.selectedFlat.lng
+    }
+  }
+  
   render() {
     return (
       <div>
         <div className="map-container">
-          <Map center={this.state.center} zoom={this.state.zoom}/>
+          <Map center={this.center()} zoom={11}/>
         </div>
         <div className="flat-list">
-          <FlatList flats={flats} />
+          <FlatList flats={this.state.flats} selectedFlat={this.state.selectedFlat} selectFlat={this.selectFlat} />
         </div>
       </div>
     );
