@@ -1,6 +1,6 @@
-# Wagon Cities
+# React Flats
 
-Simple React + Redux exercise that shows information on the Le Wagon's campuses
+Simple React Airbnb clone app that list apartments and shows them on a map upon selection.
 
 ## Setup
 
