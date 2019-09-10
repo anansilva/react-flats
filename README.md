@@ -4,7 +4,7 @@ Simple React Airbnb clone app that list apartments and shows them on a map upon 
 
 ## Setup
 
-```
+```bash
 # Download the project:
 $ git clone git@github.com:anansilva/react-flats
 
